@@ -1,56 +1,62 @@
-PairTraderEngine – Statistical Arbitrage Backtesting in C++
+💹 PairTraderEngine – Statistical Arbitrage Backtesting in C++
+🔹 Overview
 
-Overview
+PairTraderEngine is a modular C++ application implementing a statistical arbitrage (pairs trading) strategy for financial assets.
+It allows users to:
 
-PairTraderEngine is a modular C++ application implementing a statistical arbitrage (pairs trading) strategy for financial assets. Designed for performance and extensibility, it allows users to load historical market data, compute hedge ratios, analyze spreads, generate Z-scores, and backtest trading strategies on ETFs like QQQ and XLK.
+Load historical market data
 
-This project demonstrates quantitative finance knowledge, C++ software engineering skills, and data-driven decision making, making it a strong portfolio addition or SOP showcase.
+Compute hedge ratios
 
-Features
-1. CSV Data Loader
+Analyze spreads and generate Z-scores
 
-Load historical price data from CSV files.
+Backtest trading strategies on ETFs like QQQ and XLK
 
-Supports flexible file paths (Windows/macOS/Linux).
+🛠 Features
+📄 CSV Data Loader
 
-Extracts only the closing prices needed for backtesting.
+Load historical price data from CSV files
 
-Modularized in csv_loader.h/cpp for easy reuse in other projects.
+Supports flexible file paths (Windows/macOS/Linux)
 
-2. Hedge Ratio Calculation
+Extracts only the closing prices needed for backtesting
 
-Computes the optimal hedge ratio (beta) between two assets using linear regression.
+Modularized in csv_loader.h/cpp for easy reuse
 
-Encapsulated in ou_process.h/cpp.
+📊 Hedge Ratio Calculation
 
-Supports real-time adjustment for new datasets.
+Computes the optimal hedge ratio (beta) between two assets using linear regression
 
-3. Spread and Z-Score Computation
+Encapsulated in ou_process.h/cpp
 
-Calculates the spread between two correlated assets using the hedge ratio.
+Supports real-time adjustment for new datasets
 
-Computes Z-scores to identify trading signals (entry/exit points).
+🔗 Spread and Z-Score Computation
 
-Enables statistical arbitrage based on mean-reversion principles.
+Calculates the spread between two correlated assets using the hedge ratio
 
-4. Backtesting Engine
+Computes Z-scores to identify trading signals (entry/exit points)
 
-Fully modular trade_engine.h/cpp.
+Enables statistical arbitrage based on mean-reversion principles
 
-Inputs: asset prices, hedge ratio, lookback period, entry/exit thresholds.
+💹 Backtesting Engine
 
-Outputs: cumulative P&L, number of trades, equity curve, and detailed trade results.
+Fully modular trade_engine.h/cpp
 
-Supports parameter customization for experimentation and strategy optimization.
+Inputs: asset prices, hedge ratio, lookback period, entry/exit thresholds
 
-5. future plan - GUI with Qt features
+Outputs: cumulative P&L, number of trades, equity curve, and detailed trade results
 
-Minimal Qt GUI implemented (if included).
+Supports parameter customization for experimentation and strategy optimization
 
-Allows selection of QQQ & XLK CSV files via file dialogs.
+🖥 future plan- GUI with Qt (features)
 
-“Run Backtest” button executes the strategy.
+Minimal Qt GUI implemented (if included)
 
-Results displayed in a text box.
+Allows selection of QQQ & XLK CSV files via file dialogs
 
-Optional equity curve plotting with Qt Charts or QCustomPlot.
+“Run Backtest” button executes the strategy
+
+Results displayed in a text box
+
+Optional equity curve plotting with Qt Charts or QCustomPlot
