@@ -1,6 +1,3 @@
-Perfect! Here’s a fully **GitHub-ready README** for your **PairTraderEngine**, with big headers, emojis, and correctly formatted bullet points:
-
----
 
 # 💹 PairTraderEngine – Statistical Arbitrage Backtesting in C++
 
@@ -49,7 +46,7 @@ This project demonstrates **quantitative finance knowledge**, **C++ software eng
 * Outputs: **cumulative P\&L**, **number of trades**, **equity curve**, and detailed trade results
 * Supports parameter customization for experimentation and strategy optimization
 
-### 🖥 Optional GUI with Qt
+### 🖥 Optional future plan GUI with Qt
 
 * Minimal Qt GUI implemented (if included)
 * Allows selection of QQQ & XLK CSV files via **file dialogs**
@@ -101,14 +98,6 @@ Number of trades: 22
 
 ---
 
-## 🧩 Technical Highlights
-
-* **C++17** for modern features and performance
-* Modular design for **CSV loading**, **OU process**, **trade engine**
-* Handles **dynamic datasets** with variable length
-* Optional GUI with **Qt** for interactive backtesting
-* Ready for **portfolio or SOP showcase**
-
 ---
 
 ## 📂 Repository Structure
@@ -121,12 +110,3 @@ PairTraderEngine/
 ├─ README.md
 ```
 
----
-
-This version will render **big, clear headers** on GitHub with emojis, and **bullet points are properly formatted**, so nothing disappears.
-
----
-
-If you want, I can also **add a “How it works” diagram and explain the 5 key functions** visually in the README—it’ll make it much more impressive for admissions or GitHub visitors.
-
-Do you want me to do that?
